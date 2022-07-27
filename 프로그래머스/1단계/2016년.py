@@ -1,6 +1,5 @@
 def solution(a, b):
     day_of_the_week_list = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU'] #1
-    day_of_the_week_idx = 0
 
     month_day_list = [ #2
         [1, 31],
@@ -25,6 +24,8 @@ def solution(a, b):
             break
         else:
             day += month_day[1]
+
+    day_of_the_week_idx = 0
 
     while True: #4
         day %= 7
